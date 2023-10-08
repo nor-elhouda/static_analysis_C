@@ -1,0 +1,16 @@
+(library
+(name ASV)
+(public_name frama-c-asv.core)
+(flags -open Frama_c_kernel :standard)
+
+(libraries frama-c.kernel frama-c-eva.core  )
+)
+
+ 
+(plugin
+(optional)
+(name asv)
+(libraries frama-c-asv.core )
+(site (frama-c plugins))
+
+)
